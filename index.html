@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Feedback System</h1>
+        <p>Share your feedback and help us improve</p>
+    </header>
+
+    <main class="container">
+
+        <section class="feedback-card">
+            <h2>Submit Your Feedback</h2>
+
+            <form id="feedbackForm">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter your name" required>
+
+                <label for="course">Course / Subject</label>
+                <input type="text" id="course"
+                       placeholder="Enter course or subject" required>
+
+                <label for="rating">Rating</label>
+                <select id="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Average</option>
+                    <option value="1">1 - Poor</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" rows="4"
+                          placeholder="Write your feedback..."
+                          required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="dashboard-card">
+            <div id="dashboard" hidden>
+                <h2>Feedback Dashboard</h2>
+        
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Total Feedback</h3>
+                    <p id="totalFeedback">0</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Average Rating</h3>
+                    <p id="averageRating">0.0 / 5</p>
+                </div>
+            </div>
+
+            <h3>Submitted Feedback</h3>
+            <div id="feedbackList">
+                <p>Feedback will appear here.</p>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+    
+<section id="adminLogin">
+  <h2>Admin Login</h2>
+
+  <form id="loginForm">
+    <label for="adminEmail">Email:</label>
+    <input type="email" id="adminEmail" required>
+
+    <label for="adminPassword">Password:</label>
+    <input type="password" id="adminPassword" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="loginMessage"></p>
+  <button id="logoutButton" type="button" hidden>Logout</button>
+</section>
+</body>
+</html>

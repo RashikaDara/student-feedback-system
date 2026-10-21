@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;
+    color: #263445;
+    padding-bottom: 30px;
+}
+
+header {
+    background: linear-gradient(135deg, #2457a7, #4b8de0);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.feedback-card,
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2457a7;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #2864c5;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+button:hover {
+    background: #174b9b;
+}
+
+#message {
+    margin-top: 15px;
+    color: #167344;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #eaf2ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-box h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.stat-box p {
+    color: #2457a7;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.feedback-item {
+    border-bottom: 1px solid #e1e5eb;
+    padding: 15px 0;
+    overflow-wrap: anywhere;
+}
+
+.feedback-item:last-child {
+    border-bottom: none;
+}
+
+.feedback-item h4 {
+    color: #2457a7;
+    margin-bottom: 8px;
+}
+
+.feedback-item p {
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .feedback-card,
+    .dashboard-card {
+        padding: 18px;
+    }
+}
